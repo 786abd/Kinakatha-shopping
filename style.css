@@ -1,0 +1,307 @@
+/*Header section*/
+
+@import url('https://fonts.googleapis.com/css2?family=Sevillana&display=swap');
+
+#header
+{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 20px 80px;
+	background: #E3E6F3;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
+	position: sticky;
+	top: 0;
+	left: 0;
+	z-index: 999;
+}
+
+#navbar
+{
+	display: flex;
+	align-items: center;
+	justify-content: center ;
+}
+
+#navbar li
+{
+	list-style: none;
+	padding: 0 20px;
+	position: relative;
+}
+
+#navbar li a
+{
+	text-decoration: none;
+	font-size: 16px;
+	font-style: oblique;
+	font-weight: 600;
+	color: #1a1a1a;
+	transition: 0.3s ease;
+}
+
+#navbar li a:hover,
+#navbar li a.active
+{
+	color: #088178;
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after
+{
+	content: "";
+	width: 30%;
+	height: 2px;
+	background: #088178;
+	position: absolute;
+	bottom: -4px;
+	left: 20px;
+}
+
+#hero
+{
+	background-image: url("Images/bgImg1.jpg");
+	height: 90vh;
+	width: 100%;
+	background-size: cover;
+	background-position: top 25% right 0;
+	padding: 0 80px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+}
+
+#hero h1
+{
+	color: #088178;
+}
+
+#hero h4
+{
+	color: navajowhite;
+}
+
+#hero h2
+{
+	color: navajowhite;
+}
+
+.section-p
+{
+	padding: 50px 80px;
+}
+
+#category
+{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+#category .cat-box img
+{
+	width: 100%;
+	margin-bottom: 10px;
+	border-radius: 20px;
+}
+
+#category .cat-box:hover
+{
+	box-shadow: 5px 5px 64px rgba(31, 19, 120, 0.1);
+}
+
+#category .cat-box
+{
+	width: 23px;
+	min-width: 250px;
+	text-align: center;
+	padding: 10px 12px;
+	border: 1px solid #bdb8e3;
+	box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.1);
+	border-radius: 15px;
+	margin: 15px 0;
+	cursor: pointer;
+	box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+}
+
+#category .cat-box .des h5
+{
+	color: #088178;
+	font-size: 20px;
+}
+
+#men-fas
+{
+	padding: 80px 90px;
+}
+
+#men-fas .des
+{
+	text-align: left;
+	color: #12154a;
+}
+
+#men-fas .star
+{
+	color: gold;
+}
+
+#men-fas .cart
+{
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	border-radius: 50px;
+	background-color: #b6f0c6;
+	font-weight: 500;
+	color: #175499;
+	padding: 0px 10px;
+}
+
+.card:hover
+{
+	box-shadow: 15px 15px 64px rgba(67, 123, 186, 0.5);
+}
+
+#women-fas
+{
+	padding: 80px 90px;
+}
+
+#women-fas .des
+{
+	text-align: left;
+	color: #12154a;
+}
+
+#women-fas .star
+{
+	color: gold;
+}
+
+#women-fas .cart
+{
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	border-radius: 50px;
+	background-color: #b6f0c6;
+	font-weight: 500;
+	color: #175499;
+	padding: 0px 10px;
+}
+
+#footwear
+{
+	padding: 80px 90px;
+}
+
+#footwear .des
+{
+	text-align: left;
+	color: #12154a;
+}
+
+#footwear .star
+{
+	color: gold;
+}
+
+#footwear .cart
+{
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	border-radius: 50px;
+	background-color: #b6f0c6;
+	font-weight: 500;
+	color: #175499;
+	padding: 0px 10px;
+}
+
+
+.footer-basic {
+  padding:40px 0;
+  background-color:#ffffff;
+  color:#4b4c4d;
+}
+
+.footer-basic ul {
+  padding:0;
+  list-style:none;
+  text-align:center;
+  font-size:18px;
+  line-height:1.6;
+  margin-bottom:0;
+}
+
+.footer-basic li {
+  padding:0 10px;
+}
+
+.footer-basic ul a {
+  color:inherit;
+  text-decoration:none;
+  opacity:0.8;
+}
+
+.footer-basic ul a:hover {
+  opacity:1;
+}
+
+.footer-basic .social {
+  text-align:center;
+  padding-bottom:25px;
+}
+
+.footer-basic .social > a {
+  font-size:24px;
+  width:40px;
+  height:40px;
+  line-height:40px;
+  display:inline-block;
+  text-align:center;
+  border-radius:50%;
+  border:1px solid #ccc;
+  margin:0 8px;
+  color:inherit;
+  opacity:0.75;
+}
+
+.footer-basic .social > a:hover {
+  opacity:0.9;
+}
+
+.footer-basic .copyright {
+  margin-top:15px;
+  text-align:center;
+  font-size:13px;
+  color:#aaa;
+  margin-bottom:0;
+}
+
+
+.card.h-100>img{
+	object-fit: contain;
+	width: 100%;
+	height: 428px;
+}
+
+.des{
+	padding: 1rem;
+}
+
+.card.h-100>a{
+	padding-left: 1rem;
+	padding-bottom: 1rem;
+}
+
+#header>a{
+	text-decoration: none;
+	color: black;
+	font-family: 'Sevillana', cursive;
+	font-size: 1.5rem;
+	font-weight: bold;
+}
